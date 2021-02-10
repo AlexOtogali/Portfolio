@@ -175,9 +175,9 @@ header{
 }
 
 .banner button:hover{
-    background: rgba(125,125,125,.2);
-    color: rgba(255, 255, 255, 0.9);
-    transition: 1s;
+    background: rgba(0255,255,255,.4);
+    color: rgba(255,255,255,.9);
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
 
 }
 
@@ -418,7 +418,16 @@ header{
     border-radius: .5rem;
     box-shadow: 0 .1rem .8 rgba(0,0,0,.4);
     border: none;
+    transition: all 1s;
 }
+
+.card-info button:hover{
+    background: rgba(0255,255,255,.4);
+    color: rgba(255,255,255,.9);
+    text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
+      
+}
+
 
 .card:hover .card-info{
     bottom: 2rem;
