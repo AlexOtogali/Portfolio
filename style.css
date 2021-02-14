@@ -178,6 +178,7 @@ header{
     background: rgba(0255,255,255,.4);
     color: rgba(255,255,255,.9);
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
+    outline: none;
 
 }
 
@@ -303,6 +304,7 @@ header{
     color: #4d4d4d;
     border-bottom: solid 3px rgb(255, 0 ,0, .5); 
     margin-bottom: 4.5rem;
+    margin-top: 2rem;
 }
 
 .conhecimento-header{
@@ -344,7 +346,8 @@ header{
 .projetos{
     display: flex;
     justify-content: space-evenly;
-
+    height: 60vh;
+    
 }
 
 .card{
@@ -425,6 +428,7 @@ header{
     background: rgba(0255,255,255,.4);
     color: rgba(255,255,255,.9);
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
+    outline: none;
       
 }
 
@@ -432,4 +436,221 @@ header{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+
+/* fim projetos */
+
+/* contato */
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0, 2rem, 3rem rgba(0,0,0,.5);
+}
+
+.contato-left{
+    width: 35%;
+    background:
+        linear-gradient(rgba(15, 15, 15, .6),rgba(22 ,22 ,22 ,.9)), 
+        url(imagens/contato.jpg);
+    background-size: cover;
+}
+
+.contato-right{
+    width: 65%;
+    background-color: rgb(228, 228, 228);
+    padding: 3rem, 3rem, 3rem, 3rem;
+}
+
+.sessao-contato h1{
+    width: 100%;
+    font-family: var(--font-primary);
+    text-align: center;
+    color: #272727;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-segundary);
+    border-bottom: 1px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+}
+
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    font-size: 1.1rem;
+    font-family: var(--font-segundary);
+    text-transform: uppercase;
+    transition: all 1s;
+}
+
+.field:focus ~label{
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus {
+    top: 0;
+    font-size: 1rem;
+    border-bottom: solid 1px;
+}
+
+.btn-subimit{
+    
+    width: 90%;
+    height: 2.5rem;
+    background: #8A2387;    
+    background: -webkit-linear-gradient(to left, #F27121, #E94057, #8A2387);   
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);   
+    color: #000;
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .8 rgba(0,0,0,.4);
+    border: none;
+    transition: 1s;
+    text-transform: uppercase;
+    cursor: pointer;
+  
+}
+
+.btn-subimit:hover{
+    outline: none;
+    transition: 1s;
+    color: #eee;
+    box-shadow: 0 .1rem .8 rgba(0,0,0,.4);
+    background: #8A2387;  
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  
+    background: linear-gradient(to left, #F27120, #E94050, #8A2380); 
+}
+
+.preenchido{
+    pointer-events: none;
+}
+
+/* fim contato */
+
+/* orcamento */
+
+.sessao-orcamento{
+    width: 100%;
+    height: 100vh;
+    background: url("./imagens/bg.jpg");
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.orcamento-wrapper{
+    width: 60%;
+    height: 60%;
+    background-color: #ffffff99;
+    border-radius: 2%;
+    box-shadow: 0 0.1rem 0.3rem rgba(0,0,0,.5);
+    position: relative;
+}
+
+
+.sessao-orcamento h1{
+    position: absolute;
+    top: -2.5rem;
+    left: 2rem;
+    background: #8A2387;
+    padding: 0 3rem;
+    color: #fff;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+   
+.sessao-orcamento label{
+    font-family: var(--font-segundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"]{
+    font-family: var(--font-segundary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 0.3rem;
+}
+
+.btn-orcamento{
+    grid-column: 2;
+    width: 90%;
+    height: 2.5rem;
+    background: #8A2387;    
+    background: -webkit-linear-gradient(to left, #F27121, #E94057, #8A2387);   
+    background: linear-gradient(to right, #F27121, #E94057, #8A2387);   
+    color: #000;
+    font-family: var(--font-action);
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .8 rgba(0,0,0,.4);
+    border: none;
+    transition: 1s;
+    text-transform: uppercase;
+    cursor: pointer;
+      
+}
+    
+.btn-orcamento:hover{
+    outline: none;
+    transition: 1s;
+    color: #eee;
+    box-shadow: 0 .1rem .8 rgba(0,0,0,.4);
+    background: #8A2387;  
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  
+    background: linear-gradient(to left, #F27120, #E94050, #8A2380); 
 }
