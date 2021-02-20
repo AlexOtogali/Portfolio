@@ -14,6 +14,9 @@
     --font-action: "Muli", serif
 }
 
+html{
+    scroll-behavior: smooth;
+}
 .hamburguer{
     /*background-color: red;*/
     width: 2rem;
@@ -513,22 +516,23 @@ header{
 .field-label{
     position: absolute;
     left: 0;
-    top: 3rem;
+    top: 4rem;
     font-size: 1.1rem;
     font-family: var(--font-segundary);
     text-transform: uppercase;
     transition: all 1s;
 }
-
-.field:focus ~label{
+.field:valid ~ label,
+.field:focus ~ label{
     top: 0;
     font-size: 1rem;
 }
 
-.field:focus {
+.field:focus{
     top: 0;
     font-size: 1rem;
     border-bottom: solid 1px;
+    
 }
 
 .btn-subimit{
@@ -566,7 +570,7 @@ header{
 
 /* fim contato */
 
-/* orcamento */
+/* orçamento */
 
 .sessao-orcamento{
     width: 100%;
@@ -611,7 +615,7 @@ header{
 }
    
 .sessao-orcamento label{
-    font-family: var(--font-segundary);
+    font-family: var(--font-action);
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -654,3 +658,60 @@ header{
     background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  
     background: linear-gradient(to left, #F27120, #E94050, #8A2380); 
 }
+
+/* fim orçamento */
+
+/* Rodapé */
+
+footer{
+    width: 100%;
+    height: 10rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p{
+    font-family: var(--font-segundary);
+    color: #a7a7a7 ;
+    font-size: 1.2rem;
+}
+
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+}
+
+.social-list ul{
+    display: flex;
+}
+
+#link-topo{
+    position: fixed;
+    left: 3rem;
+    bottom: 2em;
+    width: 2rem;
+    height: 2rem;
+    background: #8A2387;  
+    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  
+    background: linear-gradient(to left, #F27120, #E94050, #8A2380);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    border-radius: .3rem;
+    box-shadow: 0 0.1rem 0.6rem #000009;
+    
+}
+
+
+
+
