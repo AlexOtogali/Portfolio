@@ -18,7 +18,6 @@ html{
     scroll-behavior: smooth;
 }
 .hamburguer{
-    /*background-color: red;*/
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -182,7 +181,7 @@ header{
     color: rgba(255,255,255,.9);
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
     outline: none;
-
+   
 }
 
 .banner button:active{
@@ -432,6 +431,7 @@ header{
     color: rgba(255,255,255,.9);
     text-shadow: 0.3rem 0.2rem 0.3rem rgba(0,0,0,.6);
     outline: none;
+    cursor: pointer;
       
 }
 
